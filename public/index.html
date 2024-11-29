@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener Datos del Paciente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar Paciente</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="tipoDoc">Tipo de Documento:</label>
+                <input type="number" id="tipoDoc" name="tipoDoc" value="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="numeroDoc">Número de Documento:</label>
+                <input type="text" id="numeroDoc" name="numeroDoc" placeholder="Ingrese RUT sin dígito ni guión" required>
+                <small>Ejemplo: 10030660</small>
+            </div>
+            
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
